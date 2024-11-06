@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    gap: 20px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.cartao {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cartao img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.conteudo-cartao p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.botoes button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botoes button:hover {
+    background-color: #45a049;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}
+
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
